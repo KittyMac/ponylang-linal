@@ -39,57 +39,57 @@ linear functions and helpers for linal types
   fun is_scalar(o: LinalType): Bool =>
     """linal type test"""
     match o
-    | let f: F32 => true
+    | let _: F32 => true
     else false end
   fun is_vector2(o: LinalType): Bool =>
     """linal type test"""
     match o
-    | let v: V2 => true
+    | let _: V2 => true
     else false end
   fun is_vector3(o: LinalType): Bool =>
     """linal type test"""
     match o
-    | let v: V3 => true
+    | let _: V3 => true
     else false end
   fun is_vector4(o: LinalType): Bool =>
     """linal type test"""
     match o
-    | let v: V4 => true
+    | let _: V4 => true
     else false end
   fun is_matrix2(o: LinalType): Bool =>
     """linal type test"""
     match o
-    | let m: M2 => true
+    | let _: M2 => true
     else false end
   fun is_matrix3(o: LinalType): Bool =>
     """linal type test"""
     match o
-    | let m: M3 => true
+    | let _: M3 => true
     else false end
   fun is_matrix4(o: LinalType): Bool =>
     """linal type test"""
     match o
-    | let m: M4 => true
+    | let _: M4 => true
     else false end
   fun is_quaternion(o: LinalType): Bool =>
     """linal type test"""
     match o
-    | let q: Q4 => true
+    | let _: Q4 => true
     else false end
   fun is_rectangle(o: LinalType): Bool =>
     """linal type test"""
     match o
-    | let r: R4 => true
+    | let _: R4 => true
     else false end
   fun is_ray(o: LinalType): Bool =>
     """linal type test"""
     match o
-    | let r: R2 => true
+    | let _: R2 => true
     else false end
   fun is_plane(o: LinalType): Bool =>
     """linal type test"""
     match o
-    | let p: P4 => true
+    | let _: P4 => true
     else false end
 
   fun to_string(o: (LinalType | None)): String iso^ =>

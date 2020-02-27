@@ -6,10 +6,10 @@ class iso _TestM2fun is UnitTest
     let arr = _TestData.arr()
     let test = _TestHelperHelper(h)
     let m2 = M2fun
-    let v2 = V2fun
-    let zero = m2.zero()
-    let one = m2(v2.id(), v2.id())
-    let two = m2.add(one, one)
+    //let v2 = V2fun
+    //let zero = m2.zero()
+    //let one = m2(v2.id(), v2.id())
+    //let two = m2.add(one, one)
     let a1 = try m2.from_array(arr)? else m2.zero() end
     let a2 = try m2.from_array(arr, 2)? else m2.zero() end 
 
@@ -53,8 +53,8 @@ class iso _TestM3fun is UnitTest
     let m3 = M3fun
     let v3 = V3fun
     let zero = m3.zero()
-    let one = m3(v3.id(), v3.id(), v3.id())
-    let two = m3.add(one, one)
+    //let one = m3(v3.id(), v3.id(), v3.id())
+    //let two = m3.add(one, one)
     let a1 = try m3.from_array(arr)? else m3.zero() end
     let a2 = try m3.from_array(arr, 2)? else m3.zero() end
 
@@ -84,7 +84,7 @@ class iso _TestM3fun is UnitTest
 
     let m3_sample = m3((1, 2, 3), (0, 1, 4), (5, 6, 0))
     let m3_sample_inv = m3((-24, 18, 5), (20, -15, -4), (-5, 4, 1))
-    let inv32 = m3.inv(m3_sample)
+    //let inv32 = m3.inv(m3_sample)
     test.assert_eq(1, m3.det(m3_sample), "det 1")
 
     test.assert_eq(m3_sample_inv, m3.inv(m3_sample), "inverse det=1")

@@ -74,9 +74,9 @@ class iso _TestQuaternion is UnitTest
         q.mul_q4(qy90, q.mul_q4(qx90, qz90)), "q4 mul 90,90,90"
         where eps = 0.0001)
 
-    var euler: V3 = (0, 0, 0)
-    var ii: U32 = 0
-    var qt : Q4 = Q4fun.id()
+    //var euler: V3 = (0, 0, 0)
+    //var ii: U32 = 0
+    //var qt : Q4 = Q4fun.id()
 
     test.assert_eq(q.id(), q.from_euler((0, 0, 0)), "id = xyz 0")
     test.assert_eq(q.neg(q.id()),

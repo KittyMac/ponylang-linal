@@ -6,7 +6,7 @@ class iso _TestVectorFun is UnitTest
   
   fun apply(h: TestHelper) =>
    let test = _TestHelperHelper(h)
-   let vf: VectorFun[V2] val = V2fun
+   let _: VectorFun[V2] val = V2fun
    h.log("======== V2 ========")
     _testVectorFun[V2](V2fun, test)
    h.log("======== V3 ========")

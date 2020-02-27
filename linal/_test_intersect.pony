@@ -39,6 +39,6 @@ class iso _TestIntersect is UnitTest
     let v3 = Linear.vector3()
 
     let pt1 = v3(1, 2, 3)
-    let r1 = ray(pt1, (1,2,3))
+    let _ = ray(pt1, (1,2,3))
 
     
